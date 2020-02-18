@@ -1,0 +1,68 @@
+.wrap{
+	background-color: #99CCFF;
+	width: 1250px;
+	margin: 2px auto;
+}
+
+/*bagian header*/
+.wrap .header{
+	background: #99CCFF;
+	/*height: 50px;*/
+	padding: 2px 10px;
+}
+
+/*akhir header*/
+
+/*bagian menu*/
+.wrap .menu{
+	background: #F08080;
+}
+
+.wrap .menu ul{
+	padding: 0;
+	margin: 0;
+	background: #F08080;
+	overflow: hidden;
+}
+
+.wrap .menu ul li{
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+}
+/*akhir menu*/
+
+.clear{
+	clear: both;
+}
+
+.badan{
+	height: 450px;
+}
+/*bagian sidebar*/
+.wrap .badan .sidebar{
+	background: #F08080;
+	float: left;
+	width: 25%;
+	height: 100%;
+
+	.leftlinks {
+	border:1px solid #22476C; padding: 5px;
+	margin: 5px;
+	text-align: middle; background-color: #336699; width: 150px;
+}
+
+/*akhir sidebar*/
+
+.wrap .badan .content{
+	background: #F08080;
+	float: left;
+	height: 100%;
+	width: 75%;
+}
+
+.wrap .footer{
+	width: 100%;
+	padding: 10px;
+}
+
