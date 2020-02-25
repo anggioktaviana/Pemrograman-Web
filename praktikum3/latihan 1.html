@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 1</title>
+</head>
+<script language="Javascript">
+	//<!-
+	var nilai = prompt("Nilai (0-100): ",0);
+	var hasil = "";
+	if (nilai<0)
+		hasil="Nilai tidak memenuhi syarat"
+	if (nilai>=0 && nilai<=40)
+		hasil="E";
+	if(nilai>=41 && nilai<=55)
+		hasil="D";
+	if  (nilai>=56 && nilai<=60)
+		hasil="-C";
+	if (nilai>=61 && nilai<=65)
+		hasil="BC";
+	if (nilai>=66 && nilai<=70)
+		hasil="B";
+	if (nilai>=71 && nilai<=80)
+		hasil="AB";
+	if (nilai>=81 && nilai<=100)
+		hasil="A";
+	if (nilai>100)
+		hasil="Nilai tidak memenuhi syarat";
+	document.write("Nilai: "+hasil);
+	//->
+</script>
+<body>
+
+</body>
+</html>

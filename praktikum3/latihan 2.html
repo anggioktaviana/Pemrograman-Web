@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator</title>
+  <script language="javascript">
+    function tambah(){
+      var a=eval(document.getElementById("a").value);
+      var b=eval(document.getElementById("b").value);
+      var c=a+b;
+      document.form1.c.value= c;
+    }
+  </script>
+  <script language="javascript">
+    function kurang(){
+      var a=document.getElementById("a").value;
+      var b=document.getElementById("b").value;
+      var c=a-b;
+      document.form1.c.value= c;
+    }
+  </script>
+  <script language="javascript">
+    function kali(){
+      var a=document.getElementById("a").value;
+      var b=document.getElementById("b").value;
+      var c=a*b;
+      document.form1.c.value= c;
+    }
+  </script>
+  <script language="javascript">
+    function bagi(){
+      var a=document.getElementById("a").value;
+      var b=document.getElementById("b").value;
+      var c=a/b;
+      document.form1.c.value= c;
+    }
+  </script>
+  <script language="javascript">
+    function hapus(){
+      document.form1.reset();
+    }
+  </script>
+
+</head>
+<body>
+  <div align="center">
+    <h1>KALKULATOR SEDERHANA</h1>
+<form name="form1">
+  <table>
+    <tr>
+      <td>Bilangan 1</td>
+      <td>:</td>
+      <td><input type="text" id="a" name="a"></td>
+    </tr>
+    <tr>
+      <td>Bilangan 2</td>
+      <td>:</td>
+      <td><input type="text" id="b" name="b"></td>
+    </tr>
+    <tr>
+      <td>Hasil</td>
+      <td>:</td>
+      <td><input type="text" id="c" name="c" disabled="true"></td>
+    </tr>
+    <tr>
+      <td></td><td></td>
+      <td><input type="button" value="+" onclick=tambah()>
+        <input type="button" value="-" onclick=kurang()>
+        <input type="button" value="x" onclick=kali()>
+        <input type="button" value="/" onclick=bagi()>
+        <input type="button" value="hapus" onclick=hapus()>
+    </tr>
+  </table>
+</form>
+  <br>
+  <script language="javascript">
+    document.write("Dimodifikasi terakhir pada "+document.lastModified);
+  </script>
+</body>
+</html>
