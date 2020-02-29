@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".sembunyi").click(function() {$("#foto").hide("slow")});
+			$(".tampil").click(function() {$("#foto").show("slow")});
+			$(".sembunyi2").click(function() {$("#foto2").hide("slow")});
+			$(".tampil2").click(function() {$("#foto2").show("slow")});
+			$(".sembunyi3").click(function() {$("#foto3").hide("slow")});
+			$(".tampil3").click(function() {$("#foto3").show("slow")});
+
+		});
+	</script>
+</head>
+<body>
+<p><button class="sembunyi">sembuyikan</button>
+<button class="tampil">tampilkan</button></p>
+<p><button class="sembunyi2">sembunyikan</button>
+<button class="tampil2">tampilkan</button></p>
+<p><button class="sembunyi3">sembunyikan</button>
+<button class="tampil3">tampilkan</button></p>
+<p><img id="foto" src="pic.jpg"></p>
+<p><img id="foto2" src="pic2.jpg"></p>
+<p><img id="foto3" src="pic3.jpeg"></p>
+</body>
+</html>

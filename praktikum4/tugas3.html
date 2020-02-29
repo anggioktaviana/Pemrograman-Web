@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".sembunyi").click(function() {
+				$("#kotak").hide("slow")});
+			$(".tampil").click(function() {
+				$("#kotak").show("slow")});
+			setTimeout(function(){
+			$(".fade3").click(function(){
+				$("#kotak").fadeTo("slow", 0.3);
+				});
+			});
+				});
+	</script>
+	<style type="text/css">
+		#kotak{ 
+			background: yellow;
+			border: outset;
+			width: 200px;
+			height: 140px;
+			float: left;
+			margin: 10px;
+		}
+	</style>	
+</head>
+<body>
+<p id="kotak"></p>
+<br><br><br><br><br><br><br><br><br>
+<p><button class="sembunyi">fade out</button>
+<button class="tampil">fade in</button>
+<button class="fade3">fade to 0.3</button></p>
+</body>
+</html>
