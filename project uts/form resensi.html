@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tambah Resensi</title>
+	<style type="text/css" href="style form resensi.css">
+    body{
+        background-color: #FFFACD;
+    }
+		table.p{
+			font-family: century gothic;
+			padding-top: 20%;
+			padding-right: 40%;
+			padding-bottom: 10%;
+			padding-left: 40%;
+			padding: 5%;
+			background-color: #FFFACD
+		}
+		h1.thick{font-family: dunkin;
+			font-weight: bold
+			background-color:#FFFACD;}
+	</style>
+</head>
+<body>
+	<h1 class="thick" align="center">TAMBAH RESENSI</h1>
+	&nbsp; &nbsp; &nbsp; &nbsp;<img src="books.gif" width="160px"> &nbsp; <img src="books.gif" width="160px"> &nbsp; <img src="books.gif" width="160px"> &nbsp;  <img src="books.gif" width="160px"> &nbsp;  <img src="books.gif" width="160px"> &nbsp;  <img src="books.gif" width="160px"> &nbsp;  <img src="books.gif" width="160px"> 
+<form action="insert into review_buku.php" method="POST">
+<div class="content">
+    <table class="p" border="0" width="100%" cellpadding="3" cellspacing="5" align="center">
+    	
+    	<tr>
+    		<td width="10%">Nama Reviewer</td>
+            <td><input type="text"  name="nama" id="nama" class="form" size="30"></td>
+    	</tr>
+        <tr>
+            <td width="10%">Judul Buku</td>
+            <td><input type="text"  name="judul" id="judul" class="form" size="30"></td>
+        </tr>
+        <tr>
+            <td>Penulis</td>
+            <td><input type="text" name="penulis" id="penulis" class="form" size="30"></td>
+         </tr>
+         <tr>
+            <td>Penerbit</td>
+            <td><input type="text" name="penerbit" id="penulis" class="form" size="30"></td>        
+        </tr>
+        <tr>
+        	<td>Tahun Terbit</td>
+            <td><input type="text" name="thnterbit" id="thnterbit" class="form" size="30"></td>        
+        </tr>
+        <tr>
+        	<td>Jumlah Halaman</td>
+            <td><input type="text" name="jmlhalaman" id="jmlhalaman" class="form" size="30"></td>       
+        </tr>
+        <tr>
+            <td align="top">Isi Resensi</td>
+            <td align="top" colspan="2">
+                <textarea name="isi" id="isi" class="form" cols="50" rows="8"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="top">Kelebihan Buku</td>
+            <td align="top" colspan="2">
+                <textarea name="kelebihan" id="kelebihan" class="form" cols="50" rows="8"></textarea>
+            </td>
+        </tr>
+        <tr>
+           	<td align="top">Kekurangan Buku</td>
+            <td align="top" colspan="2">
+                <textarea name="kekurangan" id="kekurangan" class="form" cols="50" rows="8"></textarea>
+            </td>
+        </tr>
+        <tr>
+        	 <td><input type="submit" class="btn" value="Simpan" width="200" ></td>
+             <td><input type="reset" class="btn" value="Reset"></td>  
+        </tr>
+    </table>
+     </div>
+
+</form>
+</body>
+</html>

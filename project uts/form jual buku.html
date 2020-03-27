@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jual</title>
+    <style type="text/css">
+    body{
+        background-color: #98FB98;
+    }
+        table.p{
+            font-family: century gothic;
+            padding-top: 20%;
+            padding-right: 40%;
+            padding-bottom: 10%;
+            padding-left: 40%;
+            padding: 5%;
+            background-color: #98FB98
+        }
+        h1.thick{font-family: dunkin;
+            font-weight: bold;
+             }
+        
+    </style>
+</head>
+<body>
+    <h1 class="thick" align="center">JUAL BUKU</h1>
+<form action="insert into jual_buku.php" method="POST">
+
+    <table class="p" border="0" width="100%" cellpadding="3" cellspacing="5" align="center">
+        <img src="books2.gif" width="160px"> &nbsp; <img src="uang.png" width="160px"> &nbsp; <img src="books2.gif" width="160px"> &nbsp; <img src="uang.png" width="160px"> &nbsp;  <img src="books2.gif" width="160px"> &nbsp; <img src="uang.png" width="160px"> &nbsp;  <img src="books2.gif" width="160px"> 
+        <tr>
+            <td width="10%">Nama Penjual</td>
+            <td><input type="text"  name="nama" id="nama" class="form" size="30"></td>
+        </tr>
+        <tr>
+            <td>Domisili</td>
+            <td><input type="text" name="domisili" id="domisili" class="form" size="30"></td> 
+        </tr>
+        <tr>
+            <td width="10%">Judul Buku</td>
+            <td><input type="text"  name="judul" id="judul" class="form" size="30"></td>
+        </tr>
+        <tr>
+            <td>Penulis</td>
+            <td><input type="text" name="penulis" id="penulis" class="form" size="30"></td>
+         </tr>
+         <tr>
+            <td>Penerbit</td>
+            <td><input type="text" name="penerbit" id="penulis" class="form" size="30"></td>        
+        </tr>
+        <tr>
+            <td>Tahun Terbit</td>
+            <td><input type="text" name="thnterbit" id="thnterbit" class="form" size="30"></td>        
+        </tr>
+        <tr>
+            <td>Jumlah Halaman</td>
+            <td><input type="text" name="jmlhalaman" id="jmlhalaman" class="form" size="30"></td>       
+        </tr>
+        <tr>
+            <td>Harga</td>
+            <td><input type="text" name="harga" id="harga" class="form" size="30"></td> 
+        </tr>
+        <tr>
+            <td>No. HP</td>
+            <td><input type="text" name="no_hp" id="no_hp" class="form" size="30"></td> 
+        </tr>
+        <tr>
+            <td valign="top">Kondisi Buku</td>
+            <td valign="top" colspan="2">
+                <textarea name="kondisi" id="isi" class="form" cols="50" rows="8"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" class="btn" value="Simpan" width="200"></td>
+            <td><input type="reset" class="btn" value="Reset"></td>  
+        </tr>
+    </table>
+</form>
+</body>
+</html>
