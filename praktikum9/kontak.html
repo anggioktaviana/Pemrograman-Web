@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Isi Kontak</title>
+    <style type="text/css" href="style form resensi.css">
+    body{
+        background-color: #FFFACD; }
+        table.p{
+            font-family: century gothic;
+            padding-top: 20%;
+            padding-right: 40%;
+            padding-bottom: 10%;
+            padding-left: 40%;
+            padding: 5%;
+            background-color: #FFFACD
+        }
+        h1.thick{font-family: dunkin;
+            font-weight: bold
+            background-color:#FFFACD;}
+    </style>
+</head>
+<body>
+    <h1 class="thick" align="center">ISI KONTAK</h1>
+<form action="simpan_kontak.php" method="POST">
+<div class="content">
+    <table class="p" border="0" width="100%" cellpadding="3" cellspacing="5" align="center">
+        <tr>
+            <td width="10%">Nama</td>
+            <td><input type="text"  name="nama" id="nama" class="form" size="30"></td>
+        </tr>
+        <tr>
+            <td width="10%">Jenis Kelamin</td>
+            <td><input type="text"  name="jkel" class="form" size="30"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email"  class="form" size="30"></td>
+         </tr>
+         <tr>
+            <td>Alamat</td>
+            <td><input type="text" name="alamat" class="form" size="30"></td>        
+        </tr>
+        <tr>
+            <td>Kota</td>
+            <td><input type="text" name="kota" class="form" size="30"></td>        
+        </tr>
+        <tr>
+            <td align="top">Pesan</td>
+            <td align="top" colspan="2">
+                <textarea name="pesan" class="form" cols="50" rows="8"></textarea>
+            </td>
+        <tr>
+             <td><input type="submit" class="btn" value="Simpan"></td>
+             <td><input type="reset" class="btn" value="Reset"></td>  
+        </tr>
+    </table>
+     </div>
+</form>
+</body>
+</html>
